@@ -18,7 +18,20 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
             Text("Max Login Attempts: \(basics.maximumNumberOfLoginAttempts)") // Use the property
-            Text("\(basics.welcomeMessage)") // Use the property
+            Text("\(basics.welcomeMessage)")
+            Text("\(basics.friendlyWelcome)")
+            Text("\(basics.minValue)")
+            Text("\(basics.maxValue)")
+            Text("\(basics.decimalInteger)")
+            Text("\(basics.binariInteger)")
+            Text("\(basics.OctalInteger)")
+            Text("\(basics.hexadecimalInteger)")
+            Text("\(basics.paddedDouble)")
+            Text("\(basics.oneMillion)")
+            Text("\(basics.justOverOneMillion)")
+            Text("\(basics.maxAmplitudeFound)")
+            Text("\(basics.statusCode2)")
+            Text("\(basics.statusMessage2)")
 
         }
         .padding()
