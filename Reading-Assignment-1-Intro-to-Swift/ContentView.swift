@@ -31,7 +31,12 @@ struct ContentView: View {
             Text("\(basics.justOverOneMillion)")
             Text("\(basics.maxAmplitudeFound)")
             Text("\(basics.statusCode2)")
+            Text("\(basics.http404Error.1)")
+            Text("\(basics.http404Error.0)")
             Text("\(basics.statusMessage2)")
+            Text("\(basics.http404Error)")
+            Text("\(basics.surveyAnswer ?? "default value")")
+            Text("\(basics.possibleNumber1)")
 
         }
         .padding()

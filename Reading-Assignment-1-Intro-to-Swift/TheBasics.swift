@@ -39,6 +39,12 @@ struct TheBasics{
     let statusMessage2: String
 //    let (statusCode, statusMessage) = http404Error // error
     
+    var surveyAnswer: String?
+    
+    let possibleNumber = "123"
+    let possibleNumber1: Int
+    
+    
     init() {
         if environment == "development" {
             maximumNumberOfLoginAttempts = 100
@@ -47,12 +53,26 @@ struct TheBasics{
             maximumNumberOfLoginAttempts = 10
         }
         
+        
         let (statusCode, statusMessage) = http404Error
         statusCode2 = statusCode
         statusMessage2 = statusMessage
         
         print("The current value of friendlyWelcome is \(friendlyWelcome)")
-
+        
+        let convertedNumber = Int(possibleNumber)
+        
+        if convertedNumber != nil {
+            surveyAnswer = "convertedNumber contains some integer value."
+        } else {
+            surveyAnswer = "test"
+        }
+        
+        if let actualNumber = Int(possibleNumber) {
+            possibleNumber1 = actualNumber
+        } else {
+            possibleNumber1 = 0
+        }
     }
 
 }
