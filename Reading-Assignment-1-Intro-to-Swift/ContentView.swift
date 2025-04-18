@@ -9,8 +9,60 @@
 import SwiftUI
 
 struct ContentView: View {
-    let basics = TheBasics()
 
+    
+
+    var body: some View {
+//        theBasics()
+//        BasicOperatorsContentView()
+        StringsAndCharactersContentView()
+    }
+}
+
+struct StringsAndCharactersContentView: View{
+    let stringsAndCharacters = StringsAndCharacters()
+    var body: some View {
+        VStack {
+            Text("\(stringsAndCharacters.text)")
+            Text(stringsAndCharacters.emptyString)
+            Text("\(stringsAndCharacters.arrayOfCharacters)")
+            Text("\(stringsAndCharacters.arrayOfStrings)")
+            Text("\(stringsAndCharacters.eAcute)")
+            Text("\(stringsAndCharacters.regionalIndicatorForBG)")
+            Text("\(stringsAndCharacters.startIndex)")
+            Text("\(stringsAndCharacters.startIndex2)")
+            Text("-----\(stringsAndCharacters.startIndex22)----")
+            Text("\(stringsAndCharacters.startIndex3)")
+            Text("\(stringsAndCharacters.startIndex4)")
+            Text("\(stringsAndCharacters.startIndex5)")
+            Text("\(stringsAndCharacters.startIndex6)")
+            Text("\(stringsAndCharacters.indexStingAccess)")
+        }
+    }
+    
+    
+}
+
+struct BasicOperatorsContentView: View {
+    let basicOperators = BasicOperators()
+    var body: some View {
+        VStack {
+            Text(basicOperators.welcomeMessage)
+            Text("\(basicOperators.x)")
+            Text("\(basicOperators.y)")
+            Text("\(basicOperators.minusThree)")
+            Text("\(basicOperators.plusThree)")
+            Text("\(basicOperators.indexArray)")
+            Text("\(basicOperators.dictionary)")
+            Text("\(basicOperators.newNames)")
+        }
+    }
+}
+
+
+
+struct theBasics: View{
+    let basics = TheBasics()
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -41,6 +93,7 @@ struct ContentView: View {
         }
         .padding()
     }
+    
 }
 
 #Preview {
