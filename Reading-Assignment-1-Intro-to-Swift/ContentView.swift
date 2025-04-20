@@ -37,6 +37,8 @@ struct StringsAndCharactersContentView: View{
             Text("\(stringsAndCharacters.startIndex5)")
             Text("\(stringsAndCharacters.startIndex6)")
             Text("\(stringsAndCharacters.indexStingAccess)")
+            Text("\(stringsAndCharacters.theString2)")
+            Text("\(stringsAndCharacters.theString3)")
         }
     }
     

@@ -26,6 +26,8 @@ struct StringsAndCharacters {
     var startIndex4: String = ""
     var startIndex5: String = ""
     var startIndex6: Array<Character> = []
+    var theString2: String = ""
+    var theString3: Substring = ""
     
     
     init () {
@@ -52,5 +54,13 @@ struct StringsAndCharacters {
         indexStingAccess.insert(contentsOf: " tez sa ebavat", at: indexStingAccess.index(before: indexStingAccess.endIndex))
         let range = indexStingAccess.index(indexStingAccess.endIndex, offsetBy: -6)..<indexStingAccess.endIndex
         indexStingAccess.removeSubrange(range)
+        
+        let someNewString: String = "Tova sus manipuliraneto na stringove e mnogo otkacheno v SWIFT"
+        let indexTillWereStringLength = someNewString.firstIndex(of: "m") ?? someNewString.startIndex
+        let theString = someNewString[...indexTillWereStringLength]
+        theString3 = theString
+        theString2 = String(theString)
+        
+        
     }
 }
