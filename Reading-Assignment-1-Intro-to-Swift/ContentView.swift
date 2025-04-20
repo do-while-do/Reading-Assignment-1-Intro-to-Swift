@@ -15,7 +15,21 @@ struct ContentView: View {
     var body: some View {
 //        theBasics()
 //        BasicOperatorsContentView()
-        StringsAndCharactersContentView()
+//        StringsAndCharactersContentView()
+        CollectionTypesContentView()
+    }
+}
+
+struct CollectionTypesContentView: View{
+    let collectionTypes = CollectionTypes()
+    var body: some View {
+        Text("\(collectionTypes.arrayWithDefaultValues)")
+        Text("\(collectionTypes.sets)")
+        Text("\(collectionTypes.oddDigitsPrint)")
+        Text("\(collectionTypes.oddDigitsPrint2)")
+        Text("\(collectionTypes.evenDigitsPrint)")
+        Text("\(collectionTypes.singleDigitPrimeNumbersPrint)")
+        
     }
 }
 
